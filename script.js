@@ -29,6 +29,7 @@ for (const dict in dicts) {
   // tranforming the enUS to en-US
   opt.textContent = `${dict.slice(0, 2)}-${dict.slice(2)}`;
   opt.value = dict;
+  opt.classList.add("option");
   selector.options.add(opt);
 }
 

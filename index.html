@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Unscrambler</title>
   </head>
   <body>
-    <div class="select-dict">
-      Select Dictionary:
-      <select class="dict-selector"></select>
-    </div>
-    <br />
-    <div class="form">
-      <input class="input-word" type="text" value="" />
-      <button class="btn-check">Unscrambler</button>
-      <button class="btn-clr">Clear</button>
-    </div>
-    <br />
-    <div class="results"></div>
-    <script src="words.js"></script>
-    <script src="script.js"></script>
+    <header>
+      <h1>Word Unscrumbler</h1>
+    </header>
+    <main>
+      <div class="select-dict">
+        Select Dictionary:
+        <select class="dict-selector"></select>
+      </div>
+      <div class="form">
+        <input class="input-word" type="text" value="" />
+        <button class="btn btn-check">Unscrambler</button>
+        <button class="btn btn-clr">Clear</button>
+      </div>
+      <div class="results"></div>
+      <script src="words.js"></script>
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
