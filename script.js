@@ -1,5 +1,3 @@
-"use strict";
-
 import { dicts } from "./words.js";
 
 const btnCheck = document.querySelector(".btn-check");
@@ -20,6 +18,7 @@ class App {
     selector.addEventListener("change", (e) => {
       this.#words = dicts[e.target.value];
       results.innerHTML = "";
+      if (inputWord.value !== "") this.#checkWord();
     });
 
     this.#prepareWords();
@@ -64,12 +63,12 @@ class App {
       inputWord.select();
     } else {
       const testWord = this.#formatToChek(scrambled);
-      for (const word of this.#words) {
+      this.#words.forEach((word) => {
         if (testWord === this.#formatToChek(word)) {
           resultsFound++;
           this.#createDivAndAppend("result", word, resultsFound);
         }
-      }
+      });
       this.#createDivAndAppend("summary", `Results Found: ${resultsFound}`);
     }
   }
