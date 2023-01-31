@@ -1,4 +1,6 @@
-const dicts = {
+"use strict";
+
+export const dicts = {
   enUS: [
     "AARDVARK",
     "AARDWOLF",
