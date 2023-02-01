@@ -5,7 +5,7 @@ The idea of this simple project is to find a "real" word with a given other scra
 You can add your own dict, just update the file "words.js
 
 ```
-export const dicts = {
+const dicts = {
   ptBR: ["word1", "word2"],
   enUS: ["word3", "word4"],
 };
