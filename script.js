@@ -1,4 +1,4 @@
-import { dicts } from "./words.js";
+"use strict";
 
 const btnCheck = document.querySelector(".btn-check");
 const btnClr = document.querySelector(".btn-clr");
